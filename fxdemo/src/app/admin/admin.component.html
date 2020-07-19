@@ -1,0 +1,30 @@
+<div style="text-align:center">
+  <h1 class="top-head">
+    Welcome ! {{userinfo.username}}
+  </h1>
+  <p>
+    <button class="btn-log" (click)="logout()">
+      Logout
+    </button>
+  </p>
+ 
+  <div class="container">
+      <h2 class="head">Information</h2>                
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{userinfo.username}}</td>
+            <td>{{userinfo.useremail}}</td>
+            <td>{{userinfo.usermobile}}</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+</div>
